@@ -34,15 +34,15 @@ class vehicleData:
         except Exception as e:
             raise MyException(e,sys) from e
         
-    def get_vehicle_input_data(self)->DataFrame:
+    def get_vehicle_input_data_frame(self)->DataFrame:
         try:
-            vehicle_input_dict=self.get_vehicle_input_data()
+            vehicle_input_dict=self.get_vehicle_data_as_dict()
             return DataFrame(vehicle_input_dict)
         except Exception as e:
             raise MyException(e,sys) from e
              
     def get_vehicle_data_as_dict(self):
-        logging.info("Entered get vehicle data as dict method as vehicleData class")
+        logging.info("Entered get usvisa data as dict method as vehicleData class")
         try:
             input_data={
                 "Gender":[self.Gender],
@@ -59,7 +59,7 @@ class vehicleData:
             }
             logging.info("Created vehicle data dict")
             logging.info("Exited get_vehicle_data_as_dict methiod as VehicleData class")
-            
+            return input_data
         except Exception as e:
             raise MyException(e,sys) from e
         
