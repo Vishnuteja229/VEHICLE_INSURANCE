@@ -8,7 +8,7 @@ from src.constants import DATABASE_NAME
 from src.exception import MyException
 
 class Proj1Data:
-    def __int__(self)-> None:
+    def __init__(self)-> None:
         try:
             self.mongo_client =MongoDBClient(database_name=DATABASE_NAME)
         except Exception as e:
@@ -30,4 +30,35 @@ class Proj1Data:
             return df
         
         except Exception as e:
-            raise MyException(e,sys)            
+            raise MyException(e,sys) 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    
